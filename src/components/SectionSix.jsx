@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+import { Input } from "./ui/Input";
 
 const SectionSix = () => {
   const [location, setLocation] = useState("България");
@@ -9,6 +10,7 @@ const SectionSix = () => {
   const [street, setStreet] = useState("");
   const [number, setNumber] = useState("");
   const [block, setBlock] = useState("");
+  const [fromCountry, setFromCountry] = useState("");
 
   const handleClear = () => {
     setLocation("България");
@@ -26,99 +28,87 @@ const SectionSix = () => {
           {/* Form */}
           <div className="order-2 lg:order-1 w-full lg:flex-1">
             <span className="text-[#00327D] text-xl lg:text-2xl font-bold block text-center lg:text-left">
-              Къде да ни откриете
+              Where to find us
             </span>
 
             {/* Location Selection */}
             <div className="mt-4 lg:mt-0">
-              <p className="text-[#9B9EA3] text-xs lg:text-sm mt-2">
-                Населено място
-              </p>
-              <div className="relative w-full lg:w-auto justify-around">
-                <select
-                  className="w-full mt-1 lg:mt-3 border border-gray-300 rounded-lg p-3 lg:p-2 mb-4 bg-white text-[#25408F] text-xs cursor-pointer lg:text-sm appearance-none"
-                  value={location}
-                  onChange={(e) => setLocation(e.target.value)}
-                >
-                  <option>България</option>
-                </select>
-
-                {/* Custom arrow */}
-                <span className="absolute right-3 top-6 lg:top-8 -translate-y-1/2 cursor-pointer text-[#25408F]">
-                  ▼
-                </span>
+              <div className="relative w-full mt-3 lg:w-auto justify-around">
+                <Input
+                  label="City/Town"
+                  value={fromCountry}
+                  className="appearance-none"
+                  onChange={(e) => setFromCountry(e.target.value)}
+                  options={["Bulgaria"]}
+                />
               </div>
 
               {/* Address */}
               <div className="mt-3 lg:mt-3">
-                <input
-                  type="text"
-                  placeholder="п.к. 4000, общ.ПЛОВДИВ, обл.ПЛОВДИВ"
-                  className="w-full mt-1 lg:mt-3 border border-gray-300 rounded-lg p-3 lg:p-2 mb-4 bg-white text-[#25408F] text-xs lg:text-sm"
-                  value={address}
-                  onChange={(e) => setAddress(e.target.value)}
+                <Input
+                  label=""
+                  value={""}
+                  className="text-xs lg:text-sm appearance-none lg:font-light"
+                  onChange={(e) => setFromCountry(e.target.value)}
+                  options={[
+                    "Postcode 4000, Municipality Plovdiv, District Plovdiv",
+                  ]}
                 />
               </div>
             </div>
 
             {/* District */}
-            <div className="mt-4 lg:mt-0">
-              <p className="text-[#9B9EA3] text-xs lg:text-sm">кв./жк</p>
-              <div>
-                <input
-                  type="text"
-                  placeholder="СЕВЕРНА ПРОМИШЛЕНА ЗОНА"
-                  className="w-full mt-1 border border-gray-300 rounded-lg p-3 lg:p-2 mb-4 bg-white text-[#25408F] text-xs lg:text-sm"
-                  value={district}
-                  onChange={(e) => setDistrict(e.target.value)}
-                />
-              </div>
+            <div className="mt-4 lg:mt-2">
+              <Input
+                label="Neighborhood / Residential Complex"
+                value={""}
+                className="text-xs lg:text-sm appearance-none lg:font-light"
+                onChange={(e) => setFromCountry(e.target.value)}
+                options={["Northern Industrial Zone"]}
+              />
             </div>
 
             {/* Home Address */}
-            <div className="flex flex-col lg:flex-row gap-2 lg:gap-5">
+            <div className="flex flex-col lg:flex-row gap-2 lg:gap-5 lg:mt-2">
               <div className="w-full lg:w-1/3">
-                <p className="text-[#9B9EA3] text-xs lg:text-sm">бул./ул.</p>
-                <input
-                  type="text"
-                  placeholder="САНКТ ПЕТЕРБУРГ"
-                  className="w-full mt-1 border border-gray-300 rounded-lg p-3 lg:p-2 mb-4 bg-white text-[#25408F] text-xs lg:text-sm"
-                  value={street}
-                  onChange={(e) => setStreet(e.target.value)}
+                <Input
+                  label="Blvd./St."
+                  value={""}
+                  className="text-xs lg:text-sm appearance-none lg:font-light"
+                  onChange={(e) => setFromCountry(e.target.value)}
+                  options={["Saint Petersburg"]}
                 />
               </div>
               <div className="w-full lg:w-1/3">
-                <p className="text-[#9B9EA3] text-sm lg:text-sm">№</p>
-                <input
-                  type="text"
-                  placeholder="92"
-                  className="w-full mt-1 border border-gray-300 rounded-lg p-3 lg:p-2 mb-4 bg-white text-[#25408F] text-xs lg:text-sm"
-                  value={number}
-                  onChange={(e) => setNumber(e.target.value)}
+                <Input
+                  label="No."
+                  value={""}
+                  className="text-xs lg:text-sm appearance-none lg:font-light"
+                  onChange={(e) => setFromCountry(e.target.value)}
+                  options={["92"]}
                 />
               </div>
               <div className="w-full lg:w-1/3">
-                <p className="text-[#9B9EA3] text-xs lg:text-sm">бл.</p>
-                <input
-                  type="text"
-                  placeholder="1106"
-                  className="w-full mt-1 border border-gray-300 rounded-lg p-3 lg:p-2 mb-4 bg-white text-[#25408F] text-xs lg:text-sm"
-                  value={block}
-                  onChange={(e) => setBlock(e.target.value)}
+                <Input
+                  label="Bl."
+                  value={""}
+                  className="text-xs lg:text-sm appearance-none lg:font-light"
+                  onChange={(e) => setFromCountry(e.target.value)}
+                  options={["1106"]}
                 />
               </div>
             </div>
 
             {/* Buttons */}
-            <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-0 mt-4 lg:mt-0">
+            <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-0 mt-4 lg:mt-2">
               <button className="bg-[#25408F] text-white rounded-4xl py-3 lg:py-2 px-6 lg:px-5 text-xs lg:text-sm w-full lg:w-auto cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#1a3370] hover:scale-105">
-                Покажи най-близките офиси
+                Show nearest offices
               </button>
               <span
                 className="text-[#315A97] cursor-pointer hover:underline text-xs lg:text-base text-center lg:text-left lg:ml-3 xl:ml-5"
                 onClick={handleClear}
               >
-                Изчисти адреса
+                Clear address
               </span>
             </div>
           </div>

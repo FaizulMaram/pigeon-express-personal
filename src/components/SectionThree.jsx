@@ -7,13 +7,13 @@ const SectionThree = () => {
   const bottomCards = [
     {
       id: 1,
-      title: "Гъвкави решения",
-      text: "Персонализирани решения, на които можете да се доверите, за да отговорят на изискванията на вашите клиенти.",
+      title: "Flexible Solutions",
+      text: "Personalized solutions you can trust to meet your customers' requirements.",
     },
     {
       id: 2,
-      title: "Устойчива логистика",
-      text: "По-екологична логистика на товари, която помага на вашия краен резултат, на околната среда и на обществото.",
+      title: "Sustainable Logistics",
+      text: "Greener freight logistics that benefit your bottom line, the environment, and society.",
     },
   ];
 
@@ -45,11 +45,11 @@ const SectionThree = () => {
             {/* Text */}
             <div>
               <h2 className="text-2xl sm:text-3xl font-bold">
-                Сигурност на веригата за доставки
+                Supply Chain Security
               </h2>
               <p className="text-[#fff]/90 mt-3 leading-relaxed text-base">
-                Надеждни логистични решения, които отговарят на постоянно
-                променящите се пазарни нужди на вашия бизнес.
+                Reliable logistics solutions that meet the ever-changing market
+                needs of your business.
               </p>
             </div>
           </div>

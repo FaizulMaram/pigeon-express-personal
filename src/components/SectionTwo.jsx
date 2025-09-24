@@ -121,8 +121,9 @@ const SectionTwo = () => {
           {/* Form Right */}
           <FormTable />
         </div>
+        {/* Buttons */}
         <div className="grid grid-cols-1 sm:grid-cols-[1fr_1.2fr] gap-4 mt-5">
-          <button className="bg-[#25408F] text-white font-semibold py-4 px-8 rounded-full shadow  transition-all duration-500 ease-in-out hover:bg-[#1a3370] hover:scale-105 cursor-pointer text-lg">
+          <button className="bg-[#25408F] text-white font-semibold py-4 px-8 rounded-full shadow  transition-all duration-500 ease-in-out hover:bg-transparent hover:text-[#25408F] hover:border-2 hover:border-[#25408F] hover:scale-105 cursor-pointer text-xs lg:text-sm">
             Calculate price
           </button>
           <button className="ml-0 sm:ml-4 border-2 border-[#25408F] text-[#25408F] font-semibold py-4 px-8 rounded-full transition-all duration-500 ease-in-out hover:bg-[#1a3370] hover:scale-105 hover:text-white cursor-pointer text-xs lg:text-sm">
