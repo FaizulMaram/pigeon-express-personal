@@ -15,7 +15,7 @@ const MobileMenu = ({ menuOpen, navbarNames }) => {
         </div>
       ))}
 
-      <button className="w-full bg-[#002D72] text-white px-4 py-2 rounded-full hover:bg-[#001a4d] mt-3">
+      <button className="w-full bg-[#002D72] text-white px-4 py-2 cursor-pointer transition-all duration-300 rounded-full ease-in-out hover:bg-[#1a3370] hover:scale-105 mt-3">
         Order Courier
       </button>
 

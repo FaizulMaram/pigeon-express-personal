@@ -6,12 +6,6 @@ import NavbarIcons from "./ui/NavbarIcons";
 import { HamburgerMenu } from "./ui/HamburgerMenu";
 import MobileMenu from "./ui/MobileMenu";
 
-const selectBoxArr = [
-  { options: [{ lable: "", value: "" }], lable: "" },
-  { options: [{ lable: "", value: "" }], lable: "" },
-  { options: [{ lable: "", value: "" }], lable: "" },
-];
-
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
