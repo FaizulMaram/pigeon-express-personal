@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Man from "../assets/Bussinessman.png";
 import Arrowleft from "../icons/ArrowLeftBottom.svg";
+import { AnimationMove } from "./ui/AnimationMove";
 
 const SectionSeven = () => {
   const items = [
@@ -39,10 +40,12 @@ const SectionSeven = () => {
       <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-0">
         {/* Image Section */}
         <div className="px-0 lg:px-40 order-2 lg:order-1 w-full lg:w-auto flex justify-center">
-          <img
-            src={Man}
-            className="h-80 lg:h-120 transition-all duration-500 ease-in-out hover:scale-140 w-auto max-w-full object-contain"
-          />
+          <AnimationMove className="duration-500 hover:scale-130">
+            <img
+              src={Man}
+              className="h-80 lg:h-120 w-auto max-w-full object-contain"
+            />
+          </AnimationMove>
         </div>
 
         {/* Content Section */}

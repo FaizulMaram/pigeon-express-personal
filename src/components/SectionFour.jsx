@@ -1,6 +1,7 @@
 import GirlPic from "../assets/Girl-pic.png";
 import BirdArrow from "../assets/Birds Arrow.png";
 import { Button } from "./ui/Button";
+import { AnimationMove } from "./ui/AnimationMove";
 
 const SectionFour = () => {
   return (
@@ -24,22 +25,25 @@ const SectionFour = () => {
 
           {/* Image with Speech Bubble */}
           <div className="order-1 lg:order-2 relative inline-block mx-auto lg:mx-0">
-            <img
-              src={GirlPic}
-              alt="girl"
-              className="rounded-xl w-full max-w-sm lg:max-w-none transition-all duration-500 ease-in-out hover:scale-105"
-            />
-            <div
-              className="absolute bottom-10 lg:bottom-30 left-2 lg:left-auto lg:right-[-70px] z-20 bg-[#124DA6] py-3 lg:py-6 px-3 lg:px-8 text-center text-white shadow-lg max-w-[200px] lg:max-w-xs
+            <AnimationMove>
+              <img
+                src={GirlPic}
+                alt="girl"
+                className="rounded-xl w-full max-w-sm lg:max-w-none"
+              />
+
+              <div
+                className="absolute bottom-10 lg:bottom-30 left-2 lg:left-auto lg:right-[-70px] z-20 bg-[#124DA6] py-3 lg:py-6 px-3 lg:px-8 text-center text-white shadow-lg max-w-[200px] lg:max-w-xs
      rounded-[30px_10px_30px_10px/20px_40px_20px_40px] lg:rounded-[60px_20px_60px_20px/40px_80px_40px_80px] transition-all duration-500 ease-in-out hover:scale-110"
-            >
-              <span className="font-medium text-sm lg:text-2xl block">
-                Running late?
-              </span>
-              <p className="text-xs lg:text-sm mt-2">
-                Extend the pickup deadline right from your phone.
-              </p>
-            </div>
+              >
+                <span className="font-medium text-sm lg:text-2xl block">
+                  Running late?
+                </span>
+                <p className="text-xs lg:text-sm mt-2">
+                  Extend the pickup deadline right from your phone.
+                </p>
+              </div>
+            </AnimationMove>
           </div>
 
           {/* Bird Arrow - Hidden on mobile, visible on desktop */}

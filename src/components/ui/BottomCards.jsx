@@ -6,29 +6,30 @@ export const BottomCards = () => {
   const cards = [
     {
       image: CardOne,
-      title: "Полезни идеи и истории от света на доставките",
-      date: "29 септември 2025",
+      title: "Useful ideas and stories from the world of deliveries",
+      date: "29 September 2025",
       link: "#",
     },
     {
       image: CardTwo,
-      title: "Как да подготвите пратката си правилно!",
-      date: "29 септември 2025",
+      title: "How to prepare your shipment correctly!",
+      date: "29 September 2025",
       link: "#",
     },
     {
       image: CardThree,
-      title: "Отваряме врати в още градове...",
-      date: "29 септември 2025",
+      title: "We are opening doors in more cities...",
+      date: "29 September 2025",
       link: "#",
     },
     {
       image: CardFour,
-      title: "Актуални правила за доставка и услуги!",
-      date: "29 септември 2025",
+      title: "Latest delivery rules and services!",
+      date: "29 September 2025",
       link: "#",
     },
   ];
+
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 justify-items-center">
       {cards.map((card, index) => (

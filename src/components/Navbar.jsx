@@ -11,30 +11,31 @@ const Navbar = () => {
 
   return (
     <section>
+      {/* ======================= Navbar ======================= */}
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
-        {/* Logo */}
+        {/* =================== Logo ================== */}
         <div className="flex  items-center">
           <img src={Logo} alt="Logo" className="h-16 w-auto md:p-0 md:m-0 " />
         </div>
 
-        {/* Navbar Icons  Links */}
+        {/* =================== Navbar-Icons-Links =================== */}
         <div>
           <NavbarLinks />
         </div>
 
-        {/* Buttons */}
+        {/* =================== Buttons =================== */}
         <div className="hidden lg:flex lg:ml-1 items-center gap-3">
-          {/* Navbar Button */}
+          {/* ==================== Navbar-Button ==================== */}
           <Button text="Order Courier" />
-          {/* Navbar Icons Button */}
+          {/* ================== Navbar-Icons-Button ================== */}
           <NavbarIcons />
         </div>
 
-        {/* Hamburger For s screens */}
+        {/* ================== Hamburger-for-small-screens ================== */}
         <HamburgerMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       </nav>
 
-      {/* Navbar Mobile View */}
+      {/* ================== Navbar-Mobile-View ================== */}
       <MobileMenu
         menuOpen={menuOpen}
         navbarNames={[

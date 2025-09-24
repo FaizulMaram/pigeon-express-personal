@@ -1,5 +1,3 @@
-import React from "react";
-
 export const AnimationMove = ({ children, className }) => {
   return (
     <div

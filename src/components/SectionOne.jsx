@@ -1,4 +1,5 @@
 import Colage from "../assets/colage.png";
+import { AnimationMove } from "./ui/AnimationMove";
 import { Button } from "./ui/Button";
 import { ShortCard } from "./ui/ShortCard";
 
@@ -35,7 +36,9 @@ const SectionOneh = () => {
           </div>
         </div>
         <div className="w-full md:w-1/2 flex justify-center mt-8 md:mt-0">
-          <img src={Colage} alt="Collage" className="max-w-full h-auto" />
+          <AnimationMove>
+            <img src={Colage} alt="Collage" className="max-w-full h-auto" />
+          </AnimationMove>
         </div>
       </div>
       {/* Cards Section */}
