@@ -36,7 +36,7 @@ const SectionFive = () => {
             tincidunt ut laoreet dolore magna aliquam erat volutpat.
           </p>
           {/* IMg */}
-          <div className="flex justify-center relative mt-10">
+          <div className="flex justify-center relative mt-10 transition-all duration-500 ease-in-out hover:scale-110">
             <img
               src={ImagePercent1}
               className="h-48 lg:h-56 w-48 lg:w-56 object-contain"
@@ -70,7 +70,7 @@ const SectionFive = () => {
             esse molestie consequat, vel illum dolore eu feugiat nulla facilisi
           </p>
           {/* IMg */}
-          <div className="flex justify-center relative mt-10">
+          <div className="flex justify-center relative mt-10 transition-all duration-500 ease-in-out hover:scale-110">
             <img
               src={ImagePercent2}
               className="h-48 lg:h-56 w-48 lg:w-56 object-contain"
@@ -104,7 +104,7 @@ const SectionFive = () => {
             tincidunt ut laoreet dolore magna aliquam erat volutpat.
           </p>
           {/* IMg */}
-          <div className="flex justify-center relative mt-10">
+          <div className="flex justify-center relative mt-10 transition-all duration-500 ease-in-out hover:scale-110">
             <img
               src={ImagePercent3}
               className="h-48 lg:h-56 w-48 lg:w-56 object-contain"

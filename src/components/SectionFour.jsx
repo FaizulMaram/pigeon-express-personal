@@ -1,5 +1,6 @@
 import GirlPic from "../assets/Girl-pic.png";
 import BirdArrow from "../assets/Birds Arrow.png";
+import { Button } from "./ui/Button";
 
 const SectionFour = () => {
   return (
@@ -9,7 +10,7 @@ const SectionFour = () => {
           {/* Text Content */}
           <div className="py-8 lg:py-30 order-2 lg:order-1 text-center lg:text-left w-full lg:w-auto">
             <span className="text-[#25408F] font-bold text-2xl lg:text-3xl block">
-              Разбира се,че можеш да променяш плановете си !
+              Of course, you can change your plans!
             </span>
             <p className="text-xs py-5 max-w-2xl lg:max-w-none mx-auto lg:mx-0">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
@@ -17,9 +18,7 @@ const SectionFour = () => {
               erat volutpat.{" "}
             </p>
             <div className="py-6 lg:py-9">
-              <button className="bg-[#25408F] text-white rounded-full px-6 lg:px-5 py-3 lg:py-2 text-xs lg:text-sm transition-all duration-300 ease-in-out hover:bg-[#1a3370] hover:scale-105 cursor-pointer">
-                Разбери как
-              </button>
+              <Button className="hover:bg-[#2C6DCF]" text="Learn How"></Button>
             </div>
           </div>
 
@@ -28,11 +27,11 @@ const SectionFour = () => {
             <img
               src={GirlPic}
               alt="girl"
-              className="rounded-xl w-full max-w-sm lg:max-w-none"
+              className="rounded-xl w-full max-w-sm lg:max-w-none transition-all duration-500 ease-in-out hover:scale-105"
             />
             <div
               className="absolute bottom-10 lg:bottom-30 left-2 lg:left-auto lg:right-[-70px] z-20 bg-[#124DA6] py-3 lg:py-6 px-3 lg:px-8 text-center text-white shadow-lg max-w-[200px] lg:max-w-xs
-     rounded-[30px_10px_30px_10px/20px_40px_20px_40px] lg:rounded-[60px_20px_60px_20px/40px_80px_40px_80px]"
+     rounded-[30px_10px_30px_10px/20px_40px_20px_40px] lg:rounded-[60px_20px_60px_20px/40px_80px_40px_80px] transition-all duration-500 ease-in-out hover:scale-110"
             >
               <span className="font-medium text-sm lg:text-2xl block">
                 Running late?

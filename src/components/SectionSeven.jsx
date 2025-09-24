@@ -5,24 +5,24 @@ import Arrowleft from "../icons/ArrowLeftBottom.svg";
 const SectionSeven = () => {
   const items = [
     {
-      title: "API интеграция",
+      title: "API Integration",
       content:
-        "Предлагаме индивидуални решения за всеки бизнес – гъвкави условия, оптимизирани цени и приоритетно обслужване, съобразени с нуждите на вашата компания.",
+        "We offer customized solutions for every business – flexible terms, optimized prices, and priority service tailored to your company’s needs.",
     },
     {
-      title: "API интеграция",
+      title: "API Integration",
       content:
-        "Подробности за API интеграцията. Предлагаме лесна интеграция с вашите системи за автоматизирано управление на пратките.",
+        "Details about API integration. We provide easy integration with your systems for automated shipment management.",
     },
     {
-      title: "Фактуриране и поддръжка",
+      title: "Billing and Support",
       content:
-        "Информация за фактуриране и поддръжка. Получавате месечни фактури и 24/7 поддръжка от нашия екип.",
+        "Information about billing and support. You receive monthly invoices and 24/7 support from our team.",
     },
     {
-      title: "Преференциални цени",
+      title: "Preferential Prices",
       content:
-        "Детайли за преференциалните цени. Специални тарифи за големи обеми и дългосрочни договори.",
+        "Details about preferential prices. Special rates for large volumes and long-term contracts.",
     },
   ];
 
@@ -41,7 +41,7 @@ const SectionSeven = () => {
         <div className="px-0 lg:px-40 order-2 lg:order-1 w-full lg:w-auto flex justify-center">
           <img
             src={Man}
-            className="h-80 lg:h-120 w-auto max-w-full object-contain"
+            className="h-80 lg:h-120 transition-all duration-500 ease-in-out hover:scale-140 w-auto max-w-full object-contain"
           />
         </div>
 
@@ -49,10 +49,10 @@ const SectionSeven = () => {
         <div className="order-1 lg:order-2 w-full lg:w-auto flex justify-center">
           <div className="bg-[#114086]/50 text-white p-8 lg:p-10 text-3xl lg:text-4xl rounded-2xl shadow-md w-full lg:w-[480px] hover:shadow-2xl transition-all duration-400">
             <p className="text-center lg:text-left text-2xl lg:text-4xl">
-              За бизнес клиенти
+              For Business Clients
             </p>
             <p className="text-[#00A1ED] font-medium text-xl lg:text-3xl text-center lg:text-left mb-10">
-              B2B предложения
+              B2B Solutions
             </p>
 
             {items.map((item, index) => (

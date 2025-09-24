@@ -4,21 +4,10 @@ import "leaflet/dist/leaflet.css";
 import { Input } from "./ui/Input";
 
 const SectionSix = () => {
-  const [location, setLocation] = useState("България");
-  const [address, setAddress] = useState("");
-  const [district, setDistrict] = useState("");
-  const [street, setStreet] = useState("");
-  const [number, setNumber] = useState("");
-  const [block, setBlock] = useState("");
   const [fromCountry, setFromCountry] = useState("");
 
   const handleClear = () => {
-    setLocation("България");
-    setAddress("");
-    setDistrict("");
-    setStreet("");
-    setNumber("");
-    setBlock("");
+    setLocation("Bulgaria");
   };
 
   return (
